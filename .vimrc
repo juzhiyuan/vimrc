@@ -31,6 +31,8 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'Raimondi/delimitMate'
 Plug 'chemzqm/wxapp.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'mattn/emmet-vim'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 filetype plugin indent on
