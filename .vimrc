@@ -33,6 +33,7 @@ Plugin 'Lokaltog/vim-powerline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'Raimondi/delimitMate'
 Plugin 'chemzqm/wxapp.vim'
+Plugin 'iamcco/markdown-preview.nvim'
 
 " 插件列表结束
 call vundle#end()
