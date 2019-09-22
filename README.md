@@ -3,12 +3,14 @@
 
 ### Usage
 ```bash
-# 1. Install vbundle
-$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# 1. Install vim-plug
+# https://github.com/junegunn/vim-plug
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# 2. Add a Plugin into .vimrc between `call vundle#begin()` and `call vundle#end()`
+# 2. Add Plugins in .vimrc
 # e.g chemzqm/wxapp.vim ---> https://github.com/chemzqm/wxapp.vim
-Plugin 'chemzqm/wxapp.vim'
+Plug 'chemzqm/wxapp.vim'
 
-# 3. Install Plugins: open vim & execute command `:PluginUpdate`
+# 3. Install/Update Plugins: open vim & execute command `:PlugInstall/:PlugUpdate`
 ```

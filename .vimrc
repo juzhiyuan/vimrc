@@ -18,23 +18,19 @@ autocmd InsertEnter * se cul
 
 set showcmd
 set encoding=utf-8
+set nocompatible
 
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin('~/.vim/plugged')
 
-" vundle 管理的插件列表必须位于 vundle#begin() 和 vundle#end() 之间
-call vundle#begin()
+Plug 'altercation/vim-colors-solarized'
+Plug 'tomasr/molokai'
+Plug 'vim-scripts/phd'
+Plug 'Lokaltog/vim-powerline'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'Raimondi/delimitMate'
+Plug 'chemzqm/wxapp.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'tomasr/molokai'
-Plugin 'vim-scripts/phd'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'Raimondi/delimitMate'
-Plugin 'chemzqm/wxapp.vim'
-Plugin 'iamcco/markdown-preview.nvim'
-
-" 插件列表结束
-call vundle#end()
+call plug#end()
 filetype plugin indent on
