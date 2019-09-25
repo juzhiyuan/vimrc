@@ -25,6 +25,7 @@ set showcmd
 set encoding=utf-8
 set nocompatible
 
+">>> Plugins
 filetype off
 call plug#begin('~/.vim/plugged')
 
@@ -39,5 +40,13 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
 
+"rust
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 filetype plugin indent on
+
+">>> Configuration
+
+"Rust
+let g:rustfmt_autosave = 1
