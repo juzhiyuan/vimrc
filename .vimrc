@@ -39,6 +39,9 @@ Plug 'chemzqm/wxapp.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'Quramy/tsuquyomi'
+Plug 'leafgarland/typescript-vim'
 
 "rust
 Plug 'rust-lang/rust.vim'
