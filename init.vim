@@ -1,3 +1,9 @@
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 set number
 set autoindent
 
@@ -46,6 +52,11 @@ Plug 'leafgarland/typescript-vim'
 "rust
 Plug 'rust-lang/rust.vim'
 
+" Load config
+for path in split( globpath('~/vimrc/config', '*.vim'), '\n')
+    execute 'source ' . path
+endfor
+
 call plug#end()
 filetype plugin indent on
 
@@ -53,3 +64,5 @@ filetype plugin indent on
 
 "Rust
 let g:rustfmt_autosave = 1
+
+let g:deoplete#enable_at_startup = 1
